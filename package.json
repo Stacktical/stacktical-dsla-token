@@ -1,0 +1,16 @@
+{
+  "name": "stacktical-dsla-token",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "openzeppelin-eth": "^2.0.2",
+    "zos": "^2.0.1",
+    "zos-lib": "^2.0.1"
+  }
+}
