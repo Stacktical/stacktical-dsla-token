@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "truffle compile && NODE_ENV=test truffle test"
   },
   "author": "",
   "license": "ISC",
@@ -12,5 +12,10 @@
     "openzeppelin-eth": "^2.0.2",
     "zos": "^2.0.1",
     "zos-lib": "^2.0.1"
+  },
+  "devDependencies": {
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0"
   }
 }
