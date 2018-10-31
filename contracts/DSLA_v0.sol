@@ -18,12 +18,14 @@ contract DSLA_v0 is Initializable, ERC20, ERC20Detailed, ERC20Burnable, TimeLock
       * @param _admin The address of the admin allowed to always transfer tokens
       * set the unlockDate and the crowdsaleAddress
       */
-    function initialize(uint256 _releaseDate, address _admin) public initializer {
+    function initialize(address _admin) public initializer {
         ERC20Detailed.initialize("DSLA", "DSLA", 18);
-        TimeLockable.initialize(_releaseDate);
         Ownable.initialize(_admin);
 
-        // TODO: consider solving to only be able to mint once
+        // Dec 31th 2018 8AM GMT
+        uint unlockDate = 1546243200;
+        TimeLockable.initialize(unlockDate);
+
         // Tokenbits supply = 10 billions * 10^18 = 1 * 10^28 = 10000000000000000000000000000
         uint256 initialSupply = 10000000000000000000000000000;
         _mint(_admin, initialSupply);

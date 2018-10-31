@@ -12,12 +12,12 @@ contract TimeLockable is Initializable {
       * @param _newUnlockDate The date from which users will be able to transfer
       * the token
       */
-    function initialize(uint256 _newUnlockDate) public initializer {
-        require(_newUnlockDate > block.timestamp);
+    function initialize(uint256 _initialUnlockDate) public initializer {
+        require(_initialUnlockDate > block.timestamp);
 
-        _unlockDate = _newUnlockDate;
+        _unlockDate = _initialUnlockDate;
 
-        emit UnLockDateSet(msg.sender, _newUnlockDate);
+        emit UnLockDateSet(msg.sender, _initialUnlockDate);
     }
 
     /**
