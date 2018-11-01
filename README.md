@@ -18,3 +18,7 @@
 `zos push -n local --deploy-dependencies`
 
 `zos update MyUpgradeableToken --args ARG1,ARG2 -n local`
+
+*Test*
+
+`NODE_ENV=test truffle test`

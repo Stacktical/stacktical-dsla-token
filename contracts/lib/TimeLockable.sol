@@ -9,7 +9,7 @@ contract TimeLockable is Initializable {
 
     /**
       * @dev Initializer
-      * @param _newUnlockDate The date from which users will be able to transfer
+      * @param _initialUnlockDate The date from which users will be able to transfer
       * the token
       */
     function initialize(uint256 _initialUnlockDate) public initializer {

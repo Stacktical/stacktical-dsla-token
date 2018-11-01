@@ -14,13 +14,12 @@ contract DSLA_v0 is Initializable, ERC20, ERC20Detailed, ERC20Burnable, TimeLock
 
     /**
       * @dev Initializer
-      * @param _releaseDate The date from which users will be able to transfer
-      * @param _admin The address of the admin allowed to always transfer tokens
+      * @param _owner The address of the admin allowed to always transfer tokens
       * set the unlockDate and the crowdsaleAddress
       */
-    function initialize(address _admin) public initializer {
+    function initialize(address _owner) public initializer {
         ERC20Detailed.initialize("DSLA", "DSLA", 18);
-        Ownable.initialize(_admin);
+        Ownable.initialize(_owner);
 
         // Dec 31th 2018 8AM GMT
         uint unlockDate = 1546243200;
@@ -28,7 +27,7 @@ contract DSLA_v0 is Initializable, ERC20, ERC20Detailed, ERC20Burnable, TimeLock
 
         // Tokenbits supply = 10 billions * 10^18 = 1 * 10^28 = 10000000000000000000000000000
         uint256 initialSupply = 10000000000000000000000000000;
-        _mint(_admin, initialSupply);
+        _mint(_owner, initialSupply);
     }
 
     /**
