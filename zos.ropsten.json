@@ -191,7 +191,8 @@
       {
         "address": "0x446e5681cb934f5ca9f40262e337e77d16134e66",
         "version": "0.1.0",
-        "implementation": "0xb287261616218f53be98f3a0fa27b8ae99c2b662"
+        "implementation": "0xb287261616218f53be98f3a0fa27b8ae99c2b662",
+        "admin": "0x1CdFA222A7902A9B30b81a7Ef21Dcfd563cc4838"
       }
     ]
   },
