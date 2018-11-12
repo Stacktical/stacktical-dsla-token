@@ -1,4 +1,5 @@
 require('dotenv').config()
+
 const HDWalletProvider = require("truffle-hdwallet-provider");
 const babelRegister = require('babel-register');
 const babelPolyfill = require('babel-polyfill');
@@ -40,7 +41,8 @@ module.exports = {
             return new HDWalletProvider(mnemonic_prod, "https://mainnet.infura.io/" + infura_apikey_prod);
         },
         network_id: "1",
-        gas: 4612388
+        gas: 4612388,
+        gasPrice: 7000000000
     }
   }
 };
