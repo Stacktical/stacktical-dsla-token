@@ -1,11 +1,11 @@
 {
   "zosversion": "2",
-  "name": "stacktical-dsla-token",
+  "name": "DSLA",
   "version": "0.1.0",
   "contracts": {
     "DSLA_v0": "DSLA_v0"
   },
   "dependencies": {
-    "openzeppelin-eth": "^2.0.0"
+    "openzeppelin-eth": "2.0.2"
   }
 }
