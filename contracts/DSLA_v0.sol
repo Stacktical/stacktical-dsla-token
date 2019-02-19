@@ -21,8 +21,9 @@ contract DSLA_v0 is Initializable, ERC20, ERC20Detailed, ERC20Burnable, TimeLock
         ERC20Detailed.initialize("DSLA", "DSLA", 18);
         Ownable.initialize(_owner);
 
-        // Dec 31th 2018 8AM GMT
-        uint unlockDate = 1546243200;
+        // Mar 15 2019 1PM UTC
+        uint unlockDate = 1552654800;
+
         TimeLockable.initialize(unlockDate);
 
         // Tokenbits supply = 10 billions * 10^18 = 1 * 10^28 = 10000000000000000000000000000
