@@ -47,7 +47,7 @@ contract DSLA_v0 is Initializable, ERC20, ERC20Detailed, ERC20Burnable, TimeLock
       * @param _value uint256 the amount of tokens to be transferred
       */
     function transferFrom(address _from, address _to, uint256 _value) public transferLock returns(bool) {
-        super.transferFrom(_from, _to, _value);
+        return super.transferFrom(_from, _to, _value);
     }
 
     /**
@@ -56,7 +56,7 @@ contract DSLA_v0 is Initializable, ERC20, ERC20Detailed, ERC20Burnable, TimeLock
       * @param _value uint256 the amount of tokens to be transferred
       */
     function transfer(address _to, uint256 _value) public transferLock returns(bool) {
-        super.transfer(_to, _value);
+        return super.transfer(_to, _value);
     }
 
     /**

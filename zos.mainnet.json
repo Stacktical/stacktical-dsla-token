@@ -1,11 +1,11 @@
 {
   "contracts": {
     "DSLA_v0": {
-      "address": "0x13aaa8e0f5acbe1eb0a01f3a19bc75642863242e",
-      "constructorCode": "608060405234801561001057600080fd5b50612679806100206000396000f300",
-      "bodyBytecodeHash": "eb831d7e7d09b1f4f87fcd892a73289e30a1662732adbeb51f5c110315a94a0f",
-      "localBytecodeHash": "65ef2d85b9e44c5a57324520e537b6f68f57d4fc6e426d6b5aaae0e6e5fcfcf1",
-      "deployedBytecodeHash": "65ef2d85b9e44c5a57324520e537b6f68f57d4fc6e426d6b5aaae0e6e5fcfcf1",
+      "address": "0x53360799aB5F7D622F23dc50A7bf38a8d6b233F6",
+      "constructorCode": "608060405234801561001057600080fd5b5061267b806100206000396000f300",
+      "bodyBytecodeHash": "b895a4183df01f8e2f7327084a41eba3eda54ee035c8c61b68f85dc8537d4f87",
+      "localBytecodeHash": "f823780c30ac7fe7db107439d2baa8a151c0bba9073e128f63c2862c265fa073",
+      "deployedBytecodeHash": "f823780c30ac7fe7db107439d2baa8a151c0bba9073e128f63c2862c265fa073",
       "types": {
         "t_bool": {
           "id": "t_bool",
@@ -51,7 +51,7 @@
           "contract": "Initializable",
           "path": "zos-lib/contracts/Initializable.sol",
           "label": "initialized",
-          "astId": 1112,
+          "astId": 1110,
           "type": "t_bool",
           "src": "757:24:8"
         },
@@ -59,7 +59,7 @@
           "contract": "Initializable",
           "path": "zos-lib/contracts/Initializable.sol",
           "label": "initializing",
-          "astId": 1114,
+          "astId": 1112,
           "type": "t_bool",
           "src": "876:25:8"
         },
@@ -67,7 +67,7 @@
           "contract": "Initializable",
           "path": "zos-lib/contracts/Initializable.sol",
           "label": "______gap",
-          "astId": 1163,
+          "astId": 1161,
           "type": "t_array:50<t_uint256>",
           "src": "1891:29:8"
         },
@@ -75,7 +75,7 @@
           "contract": "ERC20",
           "path": "openzeppelin-eth/contracts/token/ERC20/ERC20.sol",
           "label": "_balances",
-          "astId": 499,
+          "astId": 497,
           "type": "t_mapping<t_uint256>",
           "src": "491:46:4"
         },
@@ -83,7 +83,7 @@
           "contract": "ERC20",
           "path": "openzeppelin-eth/contracts/token/ERC20/ERC20.sol",
           "label": "_allowed",
-          "astId": 505,
+          "astId": 503,
           "type": "t_mapping<t_uint256>",
           "src": "542:66:4"
         },
@@ -91,7 +91,7 @@
           "contract": "ERC20",
           "path": "openzeppelin-eth/contracts/token/ERC20/ERC20.sol",
           "label": "_totalSupply",
-          "astId": 507,
+          "astId": 505,
           "type": "t_uint256",
           "src": "613:28:4"
         },
@@ -99,7 +99,7 @@
           "contract": "ERC20",
           "path": "openzeppelin-eth/contracts/token/ERC20/ERC20.sol",
           "label": "______gap",
-          "astId": 933,
+          "astId": 931,
           "type": "t_array:50<t_uint256>",
           "src": "7048:29:4"
         },
@@ -107,7 +107,7 @@
           "contract": "ERC20Detailed",
           "path": "openzeppelin-eth/contracts/token/ERC20/ERC20Detailed.sol",
           "label": "_name",
-          "astId": 982,
+          "astId": 980,
           "type": "t_string",
           "src": "382:20:6"
         },
@@ -115,7 +115,7 @@
           "contract": "ERC20Detailed",
           "path": "openzeppelin-eth/contracts/token/ERC20/ERC20Detailed.sol",
           "label": "_symbol",
-          "astId": 984,
+          "astId": 982,
           "type": "t_string",
           "src": "406:22:6"
         },
@@ -123,7 +123,7 @@
           "contract": "ERC20Detailed",
           "path": "openzeppelin-eth/contracts/token/ERC20/ERC20Detailed.sol",
           "label": "_decimals",
-          "astId": 986,
+          "astId": 984,
           "type": "t_uint8",
           "src": "432:23:6"
         },
@@ -131,7 +131,7 @@
           "contract": "ERC20Detailed",
           "path": "openzeppelin-eth/contracts/token/ERC20/ERC20Detailed.sol",
           "label": "______gap",
-          "astId": 1038,
+          "astId": 1036,
           "type": "t_array:50<t_uint256>",
           "src": "1002:29:6"
         },
@@ -139,7 +139,7 @@
           "contract": "ERC20Burnable",
           "path": "openzeppelin-eth/contracts/token/ERC20/ERC20Burnable.sol",
           "label": "______gap",
-          "astId": 971,
+          "astId": 969,
           "type": "t_array:50<t_uint256>",
           "src": "751:29:5"
         },
@@ -147,7 +147,7 @@
           "contract": "TimeLockable",
           "path": "contracts/lib/TimeLockable.sol",
           "label": "_unlockDate",
-          "astId": 161,
+          "astId": 159,
           "type": "t_uint256",
           "src": "117:27:1"
         },
@@ -155,7 +155,7 @@
           "contract": "Ownable",
           "path": "openzeppelin-eth/contracts/ownership/Ownable.sol",
           "label": "_owner",
-          "astId": 377,
+          "astId": 375,
           "type": "t_address",
           "src": "301:22:3"
         },
@@ -163,7 +163,7 @@
           "contract": "Ownable",
           "path": "openzeppelin-eth/contracts/ownership/Ownable.sol",
           "label": "______gap",
-          "astId": 482,
+          "astId": 480,
           "type": "t_array:50<t_uint256>",
           "src": "2057:29:3"
         },
@@ -181,7 +181,9 @@
         "hasSelfDestruct": false,
         "hasDelegateCall": false,
         "hasInitialValuesInDeclarations": false,
-        "uninitializedBaseContracts": []
+        "uninitializedBaseContracts": [],
+        "storageUncheckedVars": [],
+        "storageDiff": []
       }
     }
   },
