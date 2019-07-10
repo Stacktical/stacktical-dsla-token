@@ -11,9 +11,9 @@
   "dependencies": {
     "dotenv": "^6.1.0",
     "openzeppelin-eth": "^2.0.2",
-    "truffle-hdwallet-provider": "0.0.6",
-    "zos": "^2.1.2",
-    "zos-lib": "^2.1.2"
+    "truffle-hdwallet-provider": "^1.0.13",
+    "zos": "^2.4.1",
+    "zos-lib": "^2.4.1"
   },
   "devDependencies": {
     "babel-polyfill": "^6.26.0",
