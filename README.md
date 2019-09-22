@@ -24,7 +24,7 @@
 `NODE_ENV=test truffle test`
 
 
-## Addressess
+## Addresses
 
 **Ropsten**
 `0x446e5681cb934f5ca9f40262e337e77d16134e66`
