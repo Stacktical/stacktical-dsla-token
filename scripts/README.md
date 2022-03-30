@@ -4,7 +4,7 @@
 
 1. yarn install
 2. uncomment this function in `index.js`
-3. create `.env` file with the following variables: 
+3. create `.env` file or export the following variables: 
    - `PROVIDER`, 
    - `FROM_ADMIN_PRIVATE_KEY`, 
    - `PROXY_CONTRACT_ADDRESS`, 
