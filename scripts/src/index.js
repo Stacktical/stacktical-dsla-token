@@ -45,14 +45,14 @@ import {
 //     console.log(err);
 //   });
 
-// transferProxyOwnershipMainnet()
-//   .then(() => {
-//     process.exit(0);
-//   })
-//   .catch((err) => {
-//     // Deal with the fact the chain failed
-//     console.log(err);
-//   });
+transferProxyOwnershipMainnet()
+  .then(() => {
+    process.exit(0);
+  })
+  .catch((err) => {
+    // Deal with the fact the chain failed
+    console.log(err);
+  });
 
 // printProxyOwnershipMainnet()
 //   .then(() => {

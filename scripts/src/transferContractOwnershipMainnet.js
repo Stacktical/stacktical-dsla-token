@@ -8,7 +8,10 @@ let abi = JSON.parse(fs.readFileSync(jsonFile)).abi;
 const provider = new ethers.providers.Web3Provider(process.env.PROVIDER);
 
 export async function transferContractOwnershipMainnet() {
-  const fromWallet = new ethers.Wallet(process.env.FROM_PRIVATE_KEY, provider);
+  const fromWallet = new ethers.Wallet(
+    process.env.FROM_OWNER_PRIVATE_KEY,
+    provider
+  );
 
   const contract = new ethers.Contract(
     process.env.DSLA_TOKEN_CONTRACT_ADDRESS,
@@ -16,9 +19,7 @@ export async function transferContractOwnershipMainnet() {
     fromWallet
   );
 
-  let result = await contract.transferOwnership(
-    process.env.GNOSIS_SAFE_PUB_KEY
-  );
+  let result = await contract.transferOwnership(process.env.TO_OWNER_PUB_KEY);
   console.log(result);
 }
 
