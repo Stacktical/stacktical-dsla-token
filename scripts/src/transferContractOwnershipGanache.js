@@ -1,6 +1,5 @@
 import * as fs from "fs";
 import { ethers } from "ethers";
-// import { LedgerSigner } from "@ethersproject/hardware-wallets";
 import ganache from "ganache";
 
 let jsonFile = "./abis/DSLA_v0.json";
@@ -30,8 +29,6 @@ const options = {
 
 const provider = new ethers.providers.Web3Provider(ganache.provider(options));
 const signer = provider.getSigner(singerAddress);
-// const path = "/44'/60'/0'/1/0";
-// const signer = new LedgerSigner(provider, "hid", path)
 
 export async function transferContractOwnershipGanache() {
   const contract = new ethers.Contract(contractAddress, abi, signer);
