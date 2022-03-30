@@ -9,17 +9,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "@ethersproject/hardware-wallets": "^5.6.0",
     "dotenv": "^16.0.0",
     "ethers": "^5.6.2",
-    "ganache": "^7.0.3",
-    "web3": "^1.7.1"
+    "ganache": "^7.0.3"
   },
   "author": "",
-  "license": "ISC",
-  "resolutions": {
-    "@ledgerhq/hw-app-eth": "5.47.1",
-    "@ledgerhq/hw-transport": "5.46.0",
-    "@ledgerhq/hw-transport-u2f": "5.36.0-deprecated"
-  }
+  "license": "ISC"
 }
