@@ -1,4 +1,4 @@
-require("dotenv").config();
+import 'dotenv/config' 
 import * as fs from "fs";
 import { ethers } from "ethers";
 

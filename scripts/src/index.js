@@ -1,17 +1,17 @@
-import { transferContractOwnershipGanache } from "./transferContractOwnershipGanache.js";
+// import { transferContractOwnershipGanache } from "./transferContractOwnershipGanache.js";
 import {
-  transferProxyOwnershipGanache,
-  transferProxyOwnershipLedgerGanache,
+  // transferProxyOwnershipGanache,
+  // transferProxyOwnershipLedgerGanache,
 } from "./transferProxyOwnershipGanache.js";
-import {
-  transferContractOwnershipMainnet,
-  printContractOwnershipMainnet,
-} from "./transferContractOwnershipMainnet.js";
-import {
-  transferProxyOwnershipMainnet,
-  printProxyOwnershipMainnet,
+// import {
+//   transferContractOwnershipMainnet,
+//   printContractOwnershipMainnet,
+// } from "./transferContractOwnershipMainnet.js";
+// import {
+//   transferProxyOwnershipMainnet,
+//   printProxyOwnershipMainnet,
   transferProxyOwnershipLedgerMainnet,
-} from "./transferProxyOwnershipMainnet.js";
+// } from "./transferProxyOwnershipMainnet.js";
 
 // transferContractOwnershipGanache()
 //   .then(() => {
@@ -76,11 +76,12 @@ import {
 //     console.log(err);
 //   });
 
-// transferProxyOwnershipLedgerMainnet()
-//   .then(() => {
-//     process.exit(0);
-//   })
-//   .catch((err) => {
-//     // Deal with the fact the chain failed
-//     console.log(err);
-//   });
+transferProxyOwnershipLedgerMainnet()
+  .then(() => {
+    console.log("it worked!")
+    process.exit(0);
+  })
+  .catch((err) => {
+    // Deal with the fact the chain failed
+    console.log(err);
+  });

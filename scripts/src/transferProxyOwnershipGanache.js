@@ -1,7 +1,7 @@
 import * as fs from "fs";
 import { ethers } from "ethers";
 import ganache from "ganache";
-import { LedgerSigner } from "@ethersproject/hardware-wallets";
+import { LedgerSigner } from "@anders-t/ethers-ledger";
 
 let jsonFile = "./abis/OZProxy.json";
 let abi = JSON.parse(fs.readFileSync(jsonFile)).abi;
@@ -55,9 +55,11 @@ export async function transferProxyOwnershipLedgerGanache() {
       unlockedAccounts: [toAdminAddress],
     },
   };
-  const path = "/44'/60'/0'/1/0";
-  const fromSigner = new LedgerSigner(provider, "hid", path);
+
   const provider = new ethers.providers.Web3Provider(ganache.provider(options));
+  const path = "/44'/60'/0'/1/3";
+  const fromSigner = new LedgerSigner(provider, path);
+  console.log(await fromSigner.getAddress())
   let contract = new ethers.Contract(contractAddress, abi, fromSigner);
 
   // PRINT CURRENT ADMIN

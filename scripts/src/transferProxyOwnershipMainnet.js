@@ -1,12 +1,12 @@
-require("dotenv").config();
+import 'dotenv/config' 
 import * as fs from "fs";
 import { ethers } from "ethers";
-import { LedgerSigner } from "@ethersproject/hardware-wallets";
+import { LedgerSigner } from "@anders-t/ethers-ledger";
 
 let jsonFile = "./abis/OZProxy.json";
 let abi = JSON.parse(fs.readFileSync(jsonFile)).abi;
 
-const provider = new ethers.providers.Web3Provider(process.env.PROVIDER);
+const provider = new ethers.providers.Web3Provider(process.env.RPC_PROVIDER);
 
 export async function transferProxyOwnershipLedgerMainnet() {
   // SETUP
