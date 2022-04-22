@@ -1,17 +1,17 @@
 // import { transferContractOwnershipGanache } from "./transferContractOwnershipGanache.js";
-import {
+// import {
   // transferProxyOwnershipGanache,
   // transferProxyOwnershipLedgerGanache,
-} from "./transferProxyOwnershipGanache.js";
+// } from "./transferProxyOwnershipGanache.js";
 // import {
 //   transferContractOwnershipMainnet,
 //   printContractOwnershipMainnet,
 // } from "./transferContractOwnershipMainnet.js";
-// import {
+import {
 //   transferProxyOwnershipMainnet,
-//   printProxyOwnershipMainnet,
-  transferProxyOwnershipLedgerMainnet,
-// } from "./transferProxyOwnershipMainnet.js";
+   printProxyOwnershipMainnet,
+   transferProxyOwnershipLedgerMainnet,
+} from "./transferProxyOwnershipMainnet.js";
 
 // transferContractOwnershipGanache()
 //   .then(() => {

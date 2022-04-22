@@ -6,12 +6,13 @@ import { LedgerSigner } from "@anders-t/ethers-ledger";
 let jsonFile = "./abis/OZProxy.json";
 let abi = JSON.parse(fs.readFileSync(jsonFile)).abi;
 
-const provider = new ethers.providers.Web3Provider(process.env.RPC_PROVIDER);
+const provider =  new ethers.providers.InfuraProvider("homestead", process.env.INFURA_API_KEY)
 
 export async function transferProxyOwnershipLedgerMainnet() {
+
   // SETUP
   const path = process.env.FROM_ADMIN_LEDGER_PATH;
-  const signer = new LedgerSigner(provider, "hid", path);
+  const signer = new LedgerSigner(provider, path);
   let contract = new ethers.Contract(
     process.env.PROXY_CONTRACT_ADDRESS,
     abi,
