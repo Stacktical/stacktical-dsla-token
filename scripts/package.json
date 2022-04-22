@@ -1,0 +1,20 @@
+{
+  "name": "new_repo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@anders-t/ethers-ledger": "^1.0.4",
+    "@ethersproject/hardware-wallets": "^5.6.0",
+    "dotenv": "^16.0.0",
+    "ethers": "^5.6.2",
+    "ganache": "^7.0.3"
+  },
+  "author": "",
+  "license": "ISC"
+}
